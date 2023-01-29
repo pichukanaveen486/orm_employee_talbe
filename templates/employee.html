@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+            <tr>
+            <th>EID</th>
+            <th>name</th>
+            <th>SAL</th>
+            <th>JOB</th>
+            <th>DOB</th>
+
+            </tr>
+            {% for i in employee %}
+            <tr>
+               <td> {{ i.EID }}</td>
+               <td> {{ i.name }}</td>
+               <td>{{ i.SAL }}</td>
+                <td>{{ i.JOB }}</td>
+                <td>{{ i.DOB }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
